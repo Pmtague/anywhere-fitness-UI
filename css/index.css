@@ -141,7 +141,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -151,7 +150,7 @@ html {
 html,
 body {
   font-family: 'Roboto', 'Oswald';
-=======
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -206,7 +205,7 @@ body {
 }
 .spacer-bar {
   width: 0.5%;
-  background-color: #D6E5EA;
+  background-color: #E9E9E9;
 }
 .signup-content {
   margin: 2rem;
@@ -233,6 +232,71 @@ body {
 }
 .signup-content a:hover {
   text-decoration: underline;
+}
+.btn {
+  padding: 0.5rem 2rem;
+  background: #FF8C42;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #FFFFFF;
+  transition: ease 0.2s;
+}
+.btn:hover {
+  color: #FF8C42;
+  background: #FFFFFF;
+}
+.bottom-container {
+  border: 3px solid red;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.client-section {
+  border: 2px solid green;
+  width: 40%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+}
+.client-section img1 {
+  margin-right: 60%;
+}
+.client-section button {
+  margin: 1rem;
+}
+.client-section p {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: black;
+}
+.trainer-section {
+  border: 2px solid blue;
+  width: 40%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+}
+.trainer-section .img2 {
+  margin-left: 60%;
+}
+.trainer-section button {
+  margin: 1rem;
+}
+.trainer-section p {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: black;
 }
 .btn {
   padding: 0.5rem 2rem;
