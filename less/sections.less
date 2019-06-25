@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
 
     h1 {
         font-size: 24px;
@@ -16,22 +15,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: 1px solid red;
+        background-color: @gradient-blue;
+        background: linear-gradient(@white, @gradient-blue);
 
         .left {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
+            justify-content: center;
+
+            .img {
+                height: 40vh;
+            }
         }
 
         .right {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
         }
     }
 
@@ -40,22 +39,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: 1px solid red;
+        background: linear-gradient(@white, @gradient-purple);
 
         .left {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
         }
 
         .right {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
         }
     }
 
@@ -64,22 +57,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: 1px solid red;
+        background-color: @gradient-purple;
+        background: linear-gradient(@gradient-purple, @white, @gradient-purple);
 
         .left {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
         }
 
         .right {
             width: 49.5%;
             display: flex;
-            
-            border: 1px solid green;
         }
     }
 }

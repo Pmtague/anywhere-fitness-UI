@@ -255,7 +255,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 .middle-sections h1 {
   font-size: 24px;
@@ -267,55 +266,49 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid red;
+  background-color: #3D9DE2;
+  background: linear-gradient(#FFFFFF, #3D9DE2);
 }
 .middle-sections .top .left {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
+  justify-content: center;
+}
+.middle-sections .top .left .img {
+  height: 40vh;
 }
 .middle-sections .top .right {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
 }
 .middle-sections .middle {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid red;
+  background: linear-gradient(#FFFFFF, #9013FE);
 }
 .middle-sections .middle .left {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
 }
 .middle-sections .middle .right {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
 }
 .middle-sections .bottom {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border: 1px solid red;
+  background-color: #9013FE;
+  background: linear-gradient(#9013FE, #FFFFFF, #9013FE);
 }
 .middle-sections .bottom .left {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
 }
 .middle-sections .bottom .right {
   width: 49.5%;
   display: flex;
-  border: 1px solid green;
 }
