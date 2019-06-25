@@ -292,3 +292,66 @@ body {
     border-bottom: 2px solid rgba(195, 222, 223, 0.658);
   }
 }
+.bottom-container {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.client-section {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.client-section button {
+  margin: 1rem;
+}
+.client-section p {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: black;
+}
+.trainer-section {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.trainer-section button {
+  margin: 1rem;
+}
+.trainer-section p {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: black;
+}
+.btn {
+  padding: 0.5rem 2rem;
+  background: #FF8C42;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #FFFFFF;
+  transition: ease 0.2s;
+}
+.btn:hover {
+  color: #FF8C42;
+  background: #FFFFFF;
+}
+img {
+  max-width: 40rem;
+  width: 50%;
+}
