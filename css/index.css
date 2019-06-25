@@ -141,6 +141,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5;
+}
+html,
+body {
+  font-family: 'Roboto', 'Oswald';
+=======
 .container {
   width: 100%;
   height: 100vh;
