@@ -1,3 +1,18 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textNormalize {
+  text-decoration: none;
+  color: #ffffff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,18 +155,18 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.5)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background: linear-gradient(rgba(143, 130, 202, 0.171), rgba(91, 19, 207, 0.5)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .banner {
-  border: 2px solid green;
-  margin: 2rem;
+  padding: 2rem;
 }
 .header {
   width: 100%;
   margin: 3rem;
+  margin-top: 0;
   margin-left: 0;
   font-family: Roboto;
   font-style: normal;
@@ -160,7 +175,7 @@ body {
   line-height: 75px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .statement {
   width: 30%;
@@ -171,14 +186,15 @@ body {
   line-height: 33px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .signup-parent {
-  border: 3px solid orange;
   display: flex;
+  justify-content: space-around;
+  background: #e0dede2d;
 }
 .signup-section {
-  width: 49.5%;
+  width: 40%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -186,11 +202,48 @@ body {
   line-height: 37px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.spacer-bar {
+  width: 0.5%;
+  background-color: #D6E5EA;
+}
+.signup-content {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup-content h3 {
+  margin-bottom: 1rem;
+}
+.signup-content button {
+  margin: 1rem;
+}
+.signup-content p {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: black;
+}
+.signup-content a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.signup-content a:hover {
+  text-decoration: underline;
 }
 .btn {
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   background: #FF8C42;
   border-radius: 10rem;
   font-size: 1.5rem;
+  border: none;
+  color: #FFFFFF;
+  transition: ease 0.2s;
+}
+.btn:hover {
+  color: #FF8C42;
+  background: #FFFFFF;
 }
