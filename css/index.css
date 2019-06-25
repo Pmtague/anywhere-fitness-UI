@@ -127,22 +127,21 @@ table {
   border-spacing: 0;
 }
 .container {
-  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.5)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.container img {
-  position: absolute;
-  width: 836px;
-  height: 561px;
-  left: 0px;
-  top: 0px;
-  background: rgba(173, 139, 244, 0.5);
+.banner {
+  border: 2px solid green;
+  margin: 2rem;
 }
-.content-info {
-  position: absolute;
-  width: 640px;
-  height: 119px;
-  left: 27px;
-  top: 40px;
+.header {
+  width: 100%;
+  margin: 3rem;
+  margin-left: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -153,11 +152,7 @@ table {
   color: #FFFFFF;
 }
 .statement {
-  position: absolute;
-  width: 393px;
-  height: 135px;
-  left: 27px;
-  top: 119px;
+  width: 30%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -167,12 +162,12 @@ table {
   align-items: center;
   color: #FFFFFF;
 }
-.client {
-  position: absolute;
-  width: 168px;
-  height: 74px;
-  left: 112px;
-  top: 306px;
+.signup-parent {
+  border: 3px solid orange;
+  display: flex;
+}
+.signup-section {
+  width: 49.5%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -182,51 +177,9 @@ table {
   align-items: center;
   color: #FFFFFF;
 }
-.instructor {
-  position: absolute;
-  width: 207px;
-  height: 74px;
-  left: 540px;
-  top: 306px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-}
-#btn {
-  position: absolute;
-  width: 160px;
-  height: 46px;
-  left: 116px;
-  top: 388px;
-  background: #FE855E;
-  border-radius: 86px;
-}
-.signup {
-  position: absolute;
-  width: 160px;
-  height: 46px;
-  left: 116px;
-  top: 388px;
-  background: #FE855E;
-  border-radius: 86px;
-}
-a {
-  position: absolute;
-  width: 264px;
-  height: 31px;
-  left: 483px;
-  top: 457px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #000000;
+.btn {
+  padding: 0.5rem;
+  background: #FF8C42;
+  border-radius: 10rem;
+  font-size: 1.5rem;
 }
