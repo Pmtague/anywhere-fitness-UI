@@ -1,15 +1,13 @@
+
 .bottom-container {
-    border:3px solid red;
     width: 100%;
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .client-section {
-  border: 2px solid green;
-  width: 40%;
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -17,10 +15,9 @@
   line-height: 37px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
 
-  img1{
-      margin-right:60%;
-  }
   button {
     margin: 1rem;
 }
@@ -33,8 +30,7 @@ p {
 }
 
 .trainer-section {
-  border:2px solid blue;
-  width: 40%;
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -42,11 +38,9 @@ p {
   line-height: 37px;
   display: flex;
   align-items: center;
-
-  .img2{
-      margin-left: 60%;
-  }
-   button {
+  justify-content: space-around;
+  padding: 3rem;
+  button {
       margin: 1rem;
   }
 
@@ -70,4 +64,8 @@ p {
         color: @light-orange;
         background: @white;
     }
+  }
+  img{
+      max-width: 40rem;
+      width: 50%;
   }
