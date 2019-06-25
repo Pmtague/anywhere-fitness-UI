@@ -154,10 +154,11 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(143, 130, 202, 0.171), rgba(91, 19, 207, 0.5)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background: linear-gradient(rgba(146, 128, 223, 0.384), rgba(29, 74, 223, 0.397)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .banner {
   padding: 2rem;
@@ -185,15 +186,26 @@ body {
   line-height: 33px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .statement {
+    width: 50%;
+  }
 }
 .signup-parent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: #e0dede2d;
 }
+@media (max-width: 800px) {
+  .signup-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .signup-section {
-  width: 40%;
+  width: 45%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -201,7 +213,13 @@ body {
   line-height: 37px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  justify-content: center;
+  color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .signup-section {
+    width: 100%;
+  }
 }
 .spacer-bar {
   width: 0.5%;
@@ -220,11 +238,14 @@ body {
 }
 .signup-content button {
   margin: 1rem;
+  margin-bottom: 2rem;
 }
 .signup-content p {
   margin: 1rem;
-  font-size: 1.4rem;
   color: black;
+  line-height: 1;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 .signup-content a {
   text-decoration: none;
@@ -235,16 +256,41 @@ body {
 }
 .btn {
   padding: 0.5rem 2rem;
-  background: #FF8C42;
+  background: linear-gradient(#FF8C42, #FA6400);
   border-radius: 10rem;
   font-size: 1.5rem;
   border: none;
   color: #FFFFFF;
   transition: ease 0.2s;
+  width: 70%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  transition: ease text-indent 0.9s;
+  cursor: pointer;
 }
 .btn:hover {
   color: #FF8C42;
   background: #FFFFFF;
+  text-indent: -8px;
+  transition: text-indent 0.5s;
+}
+.btn:hover::before {
+  display: inline-block;
+}
+.seperator {
+  border-right: 2px solid rgba(195, 222, 223, 0.658);
+}
+@media (max-width: 800px) {
+  .seperator {
+    border-right: none;
+    border-bottom: 2px solid rgba(195, 222, 223, 0.658);
+  }
 }
 .bottom-container {
   width: 100%;
