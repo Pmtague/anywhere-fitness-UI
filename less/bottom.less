@@ -1,0 +1,71 @@
+.bottom-container {
+  width: 100%;
+  button {
+    margin: 1rem;
+    border: 2px solid @light-orange;
+  }
+//   background: linear-gradient(fade(@bright-blue, 60%), fade(@soft-lime-green, 60%));
+}
+
+.client-section {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  button {
+    margin: 1rem;
+  }
+
+  p {
+    margin: 1rem;
+    font-size: 1.4rem;
+    color: black;
+  }
+}
+
+.trainer-section {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+  }
+
+    
+    p {
+        margin: 1rem;
+        font-size: 1.4rem;
+        color: black;
+    }
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+img {
+  max-width: 40rem;
+  width: 50%;
+}

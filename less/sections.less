@@ -4,116 +4,77 @@
     flex-direction: column;
     justify-content: center;
 
-    .top {
-        height: 100vh;
+    .top, .bottom {
+        height: 85vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: linear-gradient(@white, @gradient-blue, @white);
 
-        h1 {
-            font-size: 24px;
+        h2 {
+            font-size: 35px;
             color: @white;
             font-weight: bold;
         }
 
         p {
-            font-size: 18px;
+            font-size: 22px;
             color: @white;
         }
 
         .left {
-            width: 49.5%;
+            width: 100%;
             display: flex;
             justify-content: center;
 
             .img {
-                height: 40vh;
+                height: 100%;
                 border: 1px solid;
                 box-shadow: -15px -15px @box-shadow-one;
             }
         }
 
         .right {
-            width: 49.5%;
+            width: 65%;
             display: flex;
             padding-right: 5rem;
         }
     }
 
     .middle {
-        height: 100vh;
+        height: 85vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: linear-gradient(@gradient-purple, @white, @gradient-purple);
 
-        h1 {
-            font-size: 24px;
+        h2 {
+            font-size: 35px;
             color: @font-color;
             font-weight: bold;
         }
 
         p {
-            font-size: 18px;
+            font-size: 22px;
             color: @font-color;
         }
 
         .left {
-            width: 49.5%;
+            width: 65%;
             display: flex;
             padding-left: 5rem;
         }
 
         .right {
-            width: 49.5%;
+            width: 100%;
             display: flex;
             justify-content: center;
 
             .img {
-                height: 40vh;
+                height: 100%;
                 border: 1px solid;
                 box-shadow: 15px -15px @box-shadow-two;
             }
         }
     }
-
-    .bottom {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: linear-gradient(@white, @gradient-blue, @white);
-
-        h1 {
-            font-size: 24px;
-            color: @white;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 18px;
-            color: @white;
-        }
-
-        .left {
-            width: 49.5%;
-            display: flex;
-            justify-content: center;
-
-            .img {
-                height: 40vh;
-                border: 1px solid;
-                box-shadow: -15px -15px @box-shadow-one;
-            }
-        }
-
-        .right {
-            width: 49.5%;
-            display: flex;
-            padding-right: 5rem;
-        }
-    }
 }
-
-
