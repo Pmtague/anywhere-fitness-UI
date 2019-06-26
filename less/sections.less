@@ -4,19 +4,23 @@
     flex-direction: column;
     justify-content: center;
 
-    h1 {
-        font-size: 24px;
-        color: @font-color;
-        font-weight: bold;
-    }
-
     .top {
         height: 80vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: @gradient-blue;
         background: linear-gradient(@white, @gradient-blue);
+
+        h1 {
+            font-size: 24px;
+            color: @font-color;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: @font-color;
+        }
 
         .left {
             width: 49.5%;
@@ -25,12 +29,15 @@
 
             .img {
                 height: 40vh;
+                border: 1px solid;
+                box-shadow: -15px -15px @dark-grayish-blue;
             }
         }
 
         .right {
             width: 49.5%;
             display: flex;
+            padding-right: 5rem;
         }
     }
 
@@ -41,14 +48,33 @@
         justify-content: space-between;
         background: linear-gradient(@white, @gradient-purple);
 
+        h1 {
+            font-size: 24px;
+            color: @font-color;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: @font-color;
+        }
+
         .left {
             width: 49.5%;
             display: flex;
+            padding-left: 5rem;
         }
 
         .right {
             width: 49.5%;
             display: flex;
+            justify-content: center;
+
+            .img {
+                height: 40vh;
+                border: 1px solid;
+                box-shadow: 15px -15px @dark-grayish-blue;
+            }
         }
     }
 
@@ -57,17 +83,35 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: @gradient-purple;
-        background: linear-gradient(@gradient-purple, @white, @gradient-purple);
+        background: linear-gradient(@white, @gradient-blue);
+
+        h1 {
+            font-size: 24px;
+            color: @font-color;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: @font-color;
+        }
 
         .left {
             width: 49.5%;
             display: flex;
+            justify-content: center;
+
+            .img {
+                height: 40vh;
+                border: 1px solid;
+                box-shadow: -15px -15px @dark-grayish-blue;
+            }
         }
 
         .right {
             width: 49.5%;
             display: flex;
+            padding-right: 5rem;
         }
     }
 }

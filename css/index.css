@@ -256,18 +256,21 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-.middle-sections h1 {
-  font-size: 24px;
-  color: #323337;
-  font-weight: bold;
-}
 .middle-sections .top {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3D9DE2;
   background: linear-gradient(#FFFFFF, #3D9DE2);
+}
+.middle-sections .top h1 {
+  font-size: 24px;
+  color: #323337;
+  font-weight: bold;
+}
+.middle-sections .top p {
+  font-size: 18px;
+  color: #323337;
 }
 .middle-sections .top .left {
   width: 49.5%;
@@ -276,10 +279,13 @@ img {
 }
 .middle-sections .top .left .img {
   height: 40vh;
+  border: 1px solid;
+  box-shadow: -15px -15px #858891;
 }
 .middle-sections .top .right {
   width: 49.5%;
   display: flex;
+  padding-right: 5rem;
 }
 .middle-sections .middle {
   height: 80vh;
@@ -288,27 +294,58 @@ img {
   justify-content: space-between;
   background: linear-gradient(#FFFFFF, #9013FE);
 }
+.middle-sections .middle h1 {
+  font-size: 24px;
+  color: #323337;
+  font-weight: bold;
+}
+.middle-sections .middle p {
+  font-size: 18px;
+  color: #323337;
+}
 .middle-sections .middle .left {
   width: 49.5%;
   display: flex;
+  padding-left: 5rem;
 }
 .middle-sections .middle .right {
   width: 49.5%;
   display: flex;
+  justify-content: center;
+}
+.middle-sections .middle .right .img {
+  height: 40vh;
+  border: 1px solid;
+  box-shadow: 15px -15px #858891;
 }
 .middle-sections .bottom {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #9013FE;
-  background: linear-gradient(#9013FE, #FFFFFF, #9013FE);
+  background: linear-gradient(#FFFFFF, #3D9DE2);
+}
+.middle-sections .bottom h1 {
+  font-size: 24px;
+  color: #323337;
+  font-weight: bold;
+}
+.middle-sections .bottom p {
+  font-size: 18px;
+  color: #323337;
 }
 .middle-sections .bottom .left {
   width: 49.5%;
   display: flex;
+  justify-content: center;
+}
+.middle-sections .bottom .left .img {
+  height: 40vh;
+  border: 1px solid;
+  box-shadow: -15px -15px #858891;
 }
 .middle-sections .bottom .right {
   width: 49.5%;
   display: flex;
+  padding-right: 5rem;
 }
