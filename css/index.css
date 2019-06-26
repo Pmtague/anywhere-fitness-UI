@@ -450,3 +450,44 @@ img {
   max-width: 40rem;
   width: 50%;
 }
+body {
+  background: linear-gradient(#9013FE, #3D9DE2);
+}
+.nav-container {
+  border: 2px solid red;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  width: 20%;
+}
+.nav-links {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 20%;
+  margin-left: 47rem;
+}
+.about-info {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  top: 5rem;
+  margin-top: 8%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  color: linear-gradient(#9013FE, #3D9DE2);
+}
+.close {
+  border: 2px solid orange;
+  list-style: none;
+}
