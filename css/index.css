@@ -458,10 +458,9 @@ img {
   width: 50%;
 }
 body {
-  background: linear-gradient(#9013FE, #3D9DE2);
+  background: linear-gradient(#3D9DE2, #9013FE);
 }
 .nav-container {
-  border: 2px solid red;
   margin-top: 2rem;
   width: 100%;
   display: flex;
@@ -471,10 +470,10 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  width: 20%;
+  width: 40%;
+  margin-left: 3.5rem;
 }
 .nav-links {
-  border: 2px solid green;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -482,19 +481,25 @@ body {
   margin-left: 47rem;
 }
 .about-info {
-  border: 2px solid blue;
   display: flex;
   justify-content: center;
   top: 5rem;
-  margin-top: 8%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 6.4rem;
-  line-height: 7.5rem;
-  color: linear-gradient(#9013FE, #3D9DE2);
+  font-size: 4.4rem;
+  line-height: 3.5rem;
+  margin-right: 47rem;
+  color: #E9E9E9;
+  text-shadow: 0.5rem 0.5rem #9013FE;
+}
+.staff {
+  margin-top: 5rem;
+}
+.staff-member .pic {
+  height: 5rem;
+  width: 5rem;
 }
 .close {
-  border: 2px solid orange;
   list-style: none;
 }
