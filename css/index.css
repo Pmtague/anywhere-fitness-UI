@@ -257,20 +257,20 @@ img {
   justify-content: center;
 }
 .middle-sections .top {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(#FFFFFF, #3D9DE2);
+  background: linear-gradient(#FFFFFF, #3D9DE2, #FFFFFF);
 }
 .middle-sections .top h1 {
   font-size: 24px;
-  color: #323337;
+  color: #FFFFFF;
   font-weight: bold;
 }
 .middle-sections .top p {
   font-size: 18px;
-  color: #323337;
+  color: #FFFFFF;
 }
 .middle-sections .top .left {
   width: 49.5%;
@@ -288,11 +288,11 @@ img {
   padding-right: 5rem;
 }
 .middle-sections .middle {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(#FFFFFF, #9013FE);
+  background: linear-gradient(#9013FE, #FFFFFF, #9013FE);
 }
 .middle-sections .middle h1 {
   font-size: 24px;
@@ -316,23 +316,23 @@ img {
 .middle-sections .middle .right .img {
   height: 40vh;
   border: 1px solid;
-  box-shadow: 15px -15px #858891;
+  box-shadow: 15px -15px #E9E9E9;
 }
 .middle-sections .bottom {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(#FFFFFF, #3D9DE2);
+  background: linear-gradient(#FFFFFF, #3D9DE2, #FFFFFF);
 }
 .middle-sections .bottom h1 {
   font-size: 24px;
-  color: #323337;
+  color: #FFFFFF;
   font-weight: bold;
 }
 .middle-sections .bottom p {
   font-size: 18px;
-  color: #323337;
+  color: #FFFFFF;
 }
 .middle-sections .bottom .left {
   width: 49.5%;
