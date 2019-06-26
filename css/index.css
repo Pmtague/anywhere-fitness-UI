@@ -13,6 +13,12 @@
   text-decoration: none;
   color: #ffffff;
 }
+.featureSectionAlign {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,6 +157,10 @@ html,
 body {
   font-family: 'Roboto', 'Oswald';
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -223,8 +233,12 @@ body {
   background: linear-gradient(rgba(68, 215, 182, 0.7), rgba(50, 197, 255, 0.7));
   border-radius: 0.8rem;
 }
+.spacer-bar {
+  width: 0.5%;
+  background-color: #E9E9E9;
+}
 @media (max-width: 800px) {
-  .signup-section {
+  .spacer-bar {
     width: 80%;
     margin: 2rem;
   }
@@ -286,6 +300,155 @@ body {
 }
 .btn:hover::before {
   display: inline-block;
+}
+.middle-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle-container .top,
+.middle-container .bottom {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(#FFFFFF, #3D9DE2, #FFFFFF);
+}
+@media (max-width: 800px) {
+  .middle-container .top,
+  .middle-container .bottom {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.middle-container .top h2,
+.middle-container .bottom h2 {
+  font-size: 35px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .middle-container .top h2,
+  .middle-container .bottom h2 {
+    color: #323337;
+  }
+}
+.middle-container .top p,
+.middle-container .bottom p {
+  font-size: 22px;
+  color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .middle-container .top p,
+  .middle-container .bottom p {
+    color: #323337;
+  }
+}
+.middle-container .top .left,
+.middle-container .bottom .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .middle-container .top .left,
+  .middle-container .bottom .left {
+    width: 130%;
+  }
+}
+@media (max-width: 500px) {
+  .middle-container .top .left,
+  .middle-container .bottom .left {
+    width: 150%;
+  }
+}
+.middle-container .top .left .img,
+.middle-container .bottom .left .img {
+  height: 100%;
+  border: 1px solid;
+  box-shadow: -15px -15px #858891;
+}
+.middle-container .top .right,
+.middle-container .bottom .right {
+  width: 65%;
+  display: flex;
+  padding-right: 5rem;
+}
+@media (max-width: 800px) {
+  .middle-container .top .right,
+  .middle-container .bottom .right {
+    padding-right: 0;
+  }
+  .middle-container .top .right article,
+  .middle-container .bottom .right article {
+    text-align: center;
+  }
+}
+.middle-container .middle {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(#9013FE, #FFFFFF, #9013FE);
+}
+@media (max-width: 800px) {
+  .middle-container .middle {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+}
+.middle-container .middle h2 {
+  font-size: 35px;
+  color: #323337;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .middle-container .middle h2 {
+    color: #FFFFFF;
+  }
+}
+.middle-container .middle p {
+  font-size: 22px;
+  color: #323337;
+}
+@media (max-width: 800px) {
+  .middle-container .middle p {
+    color: #FFFFFF;
+  }
+}
+.middle-container .middle .left {
+  width: 65%;
+  display: flex;
+  padding-left: 5rem;
+}
+@media (max-width: 800px) {
+  .middle-container .middle .left {
+    padding-left: 0;
+  }
+  .middle-container .middle .left article {
+    text-align: center;
+  }
+}
+.middle-container .middle .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .middle-container .middle .right {
+    width: 130%;
+  }
+}
+@media (max-width: 500px) {
+  .middle-container .middle .right {
+    width: 150%;
+  }
+}
+.middle-container .middle .right .img {
+  height: 100%;
+  border: 1px solid;
+  box-shadow: 15px -15px #E9E9E9;
 }
 .nav {
   -webkit-transition: right 0.5s ease;

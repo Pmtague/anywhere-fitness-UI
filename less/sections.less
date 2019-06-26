@@ -1,0 +1,130 @@
+.middle-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .top, .bottom {
+        .featureSectionAlign;
+        background: linear-gradient(@white, @gradient-blue, @white);
+
+        @media(max-width: 800px) {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: @white;
+            font-weight: bold;
+
+            @media(max-width: 800px) {
+                color: @font-color;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            color: @white;
+
+            @media(max-width: 800px) {
+                color: @font-color;
+            }
+        }
+
+        .left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media(max-width: 800px) {
+                width: 130%;
+            }
+
+            @media(max-width: 500px) {
+                width: 150%;
+            }
+
+            .img {
+                height: 100%;
+                border: 1px solid;
+                box-shadow: -15px -15px @box-shadow-one;
+            }
+        }
+
+        .right {
+            width: 65%;
+            display: flex;
+            padding-right: 5rem;
+
+            @media (max-width: 800px) {
+                padding-right: 0;
+                article {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .middle {
+        .featureSectionAlign;
+        background: linear-gradient(@gradient-purple, @white, @gradient-purple);
+
+        @media(max-width: 800px) {
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: @font-color;
+            font-weight: bold;
+
+            @media(max-width: 800px) {
+                color: @white;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            color: @font-color;
+
+            @media(max-width: 800px) {
+                color: @white;
+            }
+        }
+
+        .left {
+            width: 65%;
+            display: flex;
+            padding-left: 5rem;
+
+            @media (max-width: 800px) {
+                padding-left: 0;
+                article {
+                    text-align: center;
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media(max-width: 800px) {
+                width: 130%;
+            }
+
+            @media(max-width: 500px) {
+                width: 150%;
+            }
+
+            .img {
+                height: 100%;
+                border: 1px solid;
+                box-shadow: 15px -15px @box-shadow-two;
+            }
+        }
+    }
+}
