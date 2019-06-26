@@ -177,7 +177,7 @@ body {
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  background: linear-gradient(to right, #32C5FF, #44D7B6);
+  background: none;
   padding-left: 1rem;
 }
 .statement {
