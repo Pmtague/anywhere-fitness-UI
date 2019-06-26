@@ -2,23 +2,24 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
+      fade(@vivid-violet, 20%),
       fade(@bright-blue, 20%),
-      fade(@vivid-violet, 40%)
     ),
     url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
-  background-position: center;
+  background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 5rem;
 }
 .banner {
-  padding: 2rem;
+  padding: 3rem;
+//   padding-left: 6rem;
+
 }
 
 .header {
-  width: 100%;
-  margin: 3rem;
+  width: 80%;
   margin-top: 0;
   margin-left: 0;
   font-family: Roboto;
@@ -28,11 +29,17 @@
   line-height: 75px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: @white;
+  background: none;
+  padding-left: 1rem;
+
+  img {
+      width: 10rem;
+  }
 }
 
 .statement {
-  width: 30%;
+  width: 35%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -41,6 +48,7 @@
   display: flex;
   align-items: center;
   color: @white;
+  margin-left: 2rem;
 
   @media (max-width: 800px) {
     width: 50%;
@@ -49,8 +57,10 @@
 
 .signup-parent {
   display: flex;
-  justify-content: space-evenly;
-  background: #c7c7c754;
+  justify-content: space-around;
+//   margin-left: 5rem;
+//   margin-left: 3rem;
+//   background: #c7c7c754;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -58,8 +68,8 @@
   }
 }
 .signup-section {
-  width: 45%;
-  font-family: Roboto;
+  width: 35%;
+  font-family: oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -68,25 +78,23 @@
   align-items: center;
   justify-content: center;
   color: @white;
+  background: linear-gradient(fade(@moderate-cyan, 70%), fade(@vivid-blue, 70%));
+//   background: rgba(129, 133, 155, 0.527);
+  border-radius: .8rem;
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 80%;
+    margin: 2rem;
   }
 }
 
-.spacer-bar {
-  width: 0.5%;
-  background-color: @very-light-gray;
-}
-
 .signup-content {
-  margin: 2rem;
+  margin: 1rem;
   .flexCenterColumn;
   justify-content: space-between;
 
   h3 {
     margin-bottom: 1rem;
-    text-shadow: 0px 0px 20px @very-light-gray;
   }
 
   button {
@@ -112,19 +120,19 @@
 
 .btn {
   padding: 0.5rem 2rem;
-  background: linear-gradient(@light-orange, @pure-orange);
+  background: @light-orange;
   border-radius: 10rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   color: @white;
   transition: ease 0.2s;
-  width: 70%;
+  width: 80%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: helvetica;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
   margin: 0;
   transition: ease text-indent 0.9s;
@@ -133,7 +141,7 @@
   &:hover {
     color: @light-orange;
     background: @white;
-    text-indent: -8px;
+    text-indent: -4px;
     transition: text-indent 0.5s;
   }
 
@@ -143,10 +151,10 @@
 }
 
 .seperator {
-  border-right: 2px solid rgba(195, 222, 223, 0.658);
+//   border-right: 2px solid rgba(195, 222, 223, 0.658);
 
-  @media (max-width: 800px) {
-    border-right: none;
-    border-bottom: 2px solid rgba(195, 222, 223, 0.658);
-  }
+//   @media (max-width: 800px) {
+//     border-right: none;
+//     border-bottom: 2px solid rgba(195, 222, 223, 0.658);
+//   }
 }

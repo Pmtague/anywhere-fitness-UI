@@ -154,19 +154,18 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(61, 157, 226, 0.2), rgba(144, 19, 254, 0.4)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
-  background-position: center;
+  background: linear-gradient(rgba(144, 19, 254, 0.2), rgba(61, 157, 226, 0.2)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 5rem;
 }
 .banner {
-  padding: 2rem;
+  padding: 3rem;
 }
 .header {
-  width: 100%;
-  margin: 3rem;
+  width: 80%;
   margin-top: 0;
   margin-left: 0;
   font-family: Roboto;
@@ -176,10 +175,15 @@ body {
   line-height: 75px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #FFFFFF;
+  background: none;
+  padding-left: 1rem;
+}
+.header img {
+  width: 10rem;
 }
 .statement {
-  width: 30%;
+  width: 35%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -188,6 +192,7 @@ body {
   display: flex;
   align-items: center;
   color: #FFFFFF;
+  margin-left: 2rem;
 }
 @media (max-width: 800px) {
   .statement {
@@ -196,8 +201,7 @@ body {
 }
 .signup-parent {
   display: flex;
-  justify-content: space-evenly;
-  background: #c7c7c754;
+  justify-content: space-around;
 }
 @media (max-width: 800px) {
   .signup-parent {
@@ -206,8 +210,8 @@ body {
   }
 }
 .signup-section {
-  width: 45%;
-  font-family: Roboto;
+  width: 35%;
+  font-family: oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -216,18 +220,17 @@ body {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  background: linear-gradient(rgba(68, 215, 182, 0.7), rgba(50, 197, 255, 0.7));
+  border-radius: 0.8rem;
 }
 @media (max-width: 800px) {
   .signup-section {
-    width: 100%;
+    width: 80%;
+    margin: 2rem;
   }
 }
-.spacer-bar {
-  width: 0.5%;
-  background-color: #E9E9E9;
-}
 .signup-content {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +239,6 @@ body {
 }
 .signup-content h3 {
   margin-bottom: 1rem;
-  text-shadow: 0px 0px 20px #E9E9E9;
 }
 .signup-content button {
   margin: 1rem;
@@ -258,19 +260,19 @@ body {
 }
 .btn {
   padding: 0.5rem 2rem;
-  background: linear-gradient(#FF8C42, #FA6400);
+  background: #FF8C42;
   border-radius: 10rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   color: #FFFFFF;
   transition: ease 0.2s;
-  width: 70%;
+  width: 80%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: helvetica;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
   margin: 0;
   transition: ease text-indent 0.9s;
@@ -279,20 +281,11 @@ body {
 .btn:hover {
   color: #FF8C42;
   background: #FFFFFF;
-  text-indent: -8px;
+  text-indent: -4px;
   transition: text-indent 0.5s;
 }
 .btn:hover::before {
   display: inline-block;
-}
-.seperator {
-  border-right: 2px solid rgba(195, 222, 223, 0.658);
-}
-@media (max-width: 800px) {
-  .seperator {
-    border-right: none;
-    border-bottom: 2px solid rgba(195, 222, 223, 0.658);
-  }
 }
 .nav {
   -webkit-transition: right 0.5s ease;
@@ -302,7 +295,6 @@ body {
   transition: right 0.5s ease;
   background: linear-gradient(#3D9DE2, #9013FE);
   color: white;
-  cursor: pointer;
   font-size: 2rem;
   height: 100vh;
   right: -20rem;
@@ -311,9 +303,6 @@ body {
   top: 0;
   width: 20rem;
   z-index: 1;
-}
-.nav.expanded {
-  right: 0;
 }
 .nav ul {
   position: absolute;
@@ -324,6 +313,24 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10rem;
+}
+.nav li:hover {
+  background-color: #FF8C42;
+}
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav.expanded {
+  right: 0;
 }
 .nav-toggle {
   -webkit-user-select: none;
@@ -387,7 +394,10 @@ body {
 }
 .bottom-container {
   width: 100%;
-  background: linear-gradient(rgba(61, 157, 226, 0.6), rgba(106, 246, 130, 0.6));
+}
+.bottom-container button {
+  margin: 1rem;
+  border: 2px solid #FF8C42;
 }
 .client-section {
   width: 100%;
@@ -431,9 +441,6 @@ body {
   .trainer-section {
     flex-direction: column-reverse;
   }
-}
-.trainer-section button {
-  margin: 1rem;
 }
 .trainer-section p {
   margin: 1rem;
