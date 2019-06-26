@@ -1,14 +1,11 @@
-.middle-sections {
+.middle-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .top, .bottom {
-        height: 85vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .featureSectionAlign;
         background: linear-gradient(@white, @gradient-blue, @white);
 
         @media(max-width: 800px) {
@@ -70,10 +67,7 @@
     }
 
     .middle {
-        height: 85vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .featureSectionAlign;
         background: linear-gradient(@gradient-purple, @white, @gradient-purple);
 
         @media(max-width: 800px) {
