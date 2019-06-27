@@ -338,6 +338,7 @@ img {
   font-size: 210%;
   color: #FFFFFF;
   font-weight: bold;
+  line-height: 2.5rem;
 }
 @media (max-width: 800px) {
   .middle-container .top h2,
@@ -349,6 +350,7 @@ img {
 .middle-container .bottom p {
   font-size: 130%;
   color: #FFFFFF;
+  line-height: 2rem;
 }
 @media (max-width: 800px) {
   .middle-container .top p,
@@ -413,6 +415,7 @@ img {
   font-size: 210%;
   color: #323337;
   font-weight: bold;
+  line-height: 2.5rem;
 }
 @media (max-width: 800px) {
   .middle-container .middle h2 {
@@ -427,6 +430,7 @@ img {
 .middle-container .middle p {
   font-size: 130%;
   color: #323337;
+  line-height: 2rem;
 }
 @media (max-width: 800px) {
   .middle-container .middle p {
