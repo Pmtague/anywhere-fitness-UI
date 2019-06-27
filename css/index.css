@@ -560,6 +560,9 @@ img {
   justify-content: space-around;
   padding: 3rem;
 }
+.client-section h3 {
+  margin-top: 2rem;
+}
 @media (max-width: 800px) {
   .client-section {
     flex-direction: column;
@@ -590,6 +593,9 @@ img {
   align-items: center;
   justify-content: space-around;
   padding: 3rem;
+}
+.trainer-section h3 {
+  margin-top: 2rem;
 }
 @media (max-width: 800px) {
   .trainer-section {
