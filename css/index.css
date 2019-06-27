@@ -14,11 +14,11 @@
   color: #ffffff;
 }
 .featureSectionAlign {
-  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: 5rem;
 }
 .mainGradient {
   background: linear-gradient(#9013FE, #3D9DE2);
@@ -176,7 +176,7 @@ img {
 .container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(144, 19, 254, 0.35), rgba(61, 157, 226, 0.2)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background: linear-gradient(rgba(144, 19, 254, 0.35), rgba(61, 157, 226, 0.2)), url(../assets/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
   background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,11 +390,11 @@ img {
 }
 .middle-container .top,
 .middle-container .bottom {
-  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: 5rem;
   background: linear-gradient(#FFFFFF, #3D9DE2, #FFFFFF);
 }
 @media (max-width: 500px) {
@@ -448,6 +448,7 @@ img {
   border: 1px solid;
   border-radius: 1rem;
   box-shadow: -15px -15px #858891;
+  margin-bottom: 2rem;
 }
 .middle-container .top .right,
 .middle-container .bottom .right {
@@ -466,11 +467,11 @@ img {
   }
 }
 .middle-container .middle {
-  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  padding: 5rem;
   background: linear-gradient(#9013FE, #FFFFFF, #9013FE);
 }
 @media (max-width: 500px) {
@@ -485,11 +486,6 @@ img {
   font-weight: bold;
   line-height: 2.5rem;
 }
-@media (max-width: 500px) {
-  .middle-container .middle h2 {
-    color: #FFFFFF;
-  }
-}
 @media (max-width: 400px) {
   .middle-container .middle h2 {
     color: #323337;
@@ -499,11 +495,6 @@ img {
   font-size: 130%;
   color: #323337;
   line-height: 2rem;
-}
-@media (max-width: 500px) {
-  .middle-container .middle p {
-    color: #FFFFFF;
-  }
 }
 @media (max-width: 400px) {
   .middle-container .middle p {
@@ -539,6 +530,7 @@ img {
   border: 1px solid;
   border-radius: 1rem;
   box-shadow: 15px -15px #E9E9E9;
+  margin-bottom: 2rem;
 }
 .bottom-container {
   width: 100%;
@@ -547,6 +539,7 @@ img {
 .bottom-container button {
   margin: 1rem;
   border: 2px solid #FF8C42;
+  max-width: 25rem;
 }
 .client-section {
   width: 100%;
@@ -598,6 +591,11 @@ img {
   margin-top: 2rem;
 }
 @media (max-width: 800px) {
+  .trainer-section h3 {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 800px) {
   .trainer-section {
     flex-direction: column-reverse;
   }
@@ -620,10 +618,11 @@ img {
 }
 img {
   max-width: 40rem;
-  width: 25%;
+  width: 40%;
 }
 .about-body {
   background: linear-gradient(#3D9DE2, #9013FE);
+  height: 100vh;
 }
 .tabs {
   border-bottom: 2px solid #E9E9E9;
