@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-      fade(@vivid-violet, 20%),
+      fade(@vivid-violet, 35%),
       fade(@bright-blue, 20%),
     ),
     url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
@@ -12,29 +12,71 @@
   background-attachment: fixed;
   padding-bottom: 5rem;
 }
-// .banner {
-//   padding: 3rem;
-//   padding-left: 6rem;
 
-// }
-
-// .header {
-//   img {
-    // width: 10rem;
-    // margin-top: 0;
-    // margin-left: 0;
-    // font-family: Roboto;
-    // font-style: normal;
-    // font-weight: bold;
-    // font-size: 64px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
     // line-height: 75px;
-    // display: flex;
-    // align-items: center;
-    // color: @white;
-    // background: none;
-    // padding-left: 1rem;
-//   }  
-// }
+    padding: 2% 5% 2% 0%;
+  
+    @media (max-width: 800px) {
+      padding: 2% 10% 2% 0%;
+    }
+  
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+  }
+  
+    img {
+      width: 10rem;
+    }
+  
+    .nav {
+        .flex(space-around, center);
+        font-size: 35%;
+        font-weight: bold;
+        height: 3rem;
+        width: 70%;
+  
+        @media (max-width: 500px) {
+            padding: 0;
+            padding-left: 0;
+            height: 4rem;
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+  
+        a {
+            text-decoration: none;
+            color: @white;
+            transition: ease .2s;
+            padding: .5rem;
+            border-radius: 10rem;
+
+            &:hover {
+                background-color: @light-orange;
+            }
+  
+            @media (max-width: 500px) {
+                padding-left: .3rem;
+                padding-right: .3rem;
+                margin: 0;
+                font-size: 1.3rem;
+            }
+        }
+    }
+  }
+
+
 
 .statement {
   width: 100%;
@@ -54,7 +96,11 @@
 
   @media (max-width: 800px) {
     width: 100%;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: 2rem 10rem;
+  }
+
+  @media (max-width: 665px) {
+    padding: 2rem 4rem;
   }
 
   @media (max-width: 500px) {
@@ -65,9 +111,6 @@
 .signup-parent {
   display: flex;
   justify-content: space-around;
-//   margin-left: 5rem;
-//   margin-left: 3rem;
-//   background: #c7c7c754;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -87,7 +130,6 @@
   justify-content: center;
   color: @white;
   background: linear-gradient(fade(@moderate-cyan, 70%), fade(@vivid-blue, 70%));
-//   background: rgba(129, 133, 155, 0.527);
   border-radius: .8rem;
 
   @media (max-width: 800px) {
@@ -105,10 +147,12 @@
     background-color: @very-light-gray;
 
   @media (max-width: 800px) {
-    width: 80%;
-    margin: 2rem;
+      width: 80%;
+      margin-bottom: 2rem;
   }
 }
+
+
 
 .signup-content {
   margin: 1rem;
@@ -172,12 +216,3 @@
     display: inline-block;
   }
 }
-
-// .seperator {
-//   border-right: 2px solid rgba(195, 222, 223, 0.658);
-
-//   @media (max-width: 800px) {
-//     border-right: none;
-//     border-bottom: 2px solid rgba(195, 222, 223, 0.658);
-//   }
-// }

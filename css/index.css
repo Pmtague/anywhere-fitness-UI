@@ -175,12 +175,76 @@ img {
 .container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(144, 19, 254, 0.2), rgba(61, 157, 226, 0.2)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background: linear-gradient(rgba(144, 19, 254, 0.35), rgba(61, 157, 226, 0.2)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
   background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-bottom: 5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-left: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  padding: 2% 5% 2% 0%;
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 2% 10% 2% 0%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+}
+.header img {
+  width: 10rem;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 35%;
+  font-weight: bold;
+  height: 3rem;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .header .nav {
+    padding: 0;
+    padding-left: 0;
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+.header .nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: ease 0.2s;
+  padding: 0.5rem;
+  border-radius: 10rem;
+}
+.header .nav a:hover {
+  background-color: #FF8C42;
+}
+@media (max-width: 500px) {
+  .header .nav a {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin: 0;
+    font-size: 1.3rem;
+  }
 }
 .statement {
   width: 100%;
@@ -200,7 +264,12 @@ img {
 @media (max-width: 800px) {
   .statement {
     width: 100%;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 665px) {
+  .statement {
+    padding: 2rem 4rem;
   }
 }
 @media (max-width: 500px) {
@@ -250,7 +319,7 @@ img {
 @media (max-width: 800px) {
   .spacer-bar {
     width: 80%;
-    margin: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .signup-content {
@@ -475,61 +544,9 @@ img {
   border: 1px solid;
   box-shadow: 15px -15px #E9E9E9;
 }
-.header {
-  justify-content: space-around;
-  margin-top: 0;
-  margin-left: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  display: flex;
-  background: none;
-  padding: 2% 5% 2% 0%;
-}
-@media (max-width: 800px) {
-  .header {
-    padding: 2% 10% 2% 0%;
-  }
-}
-@media (max-width: 500px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-  }
-}
-.header img {
-  width: 10rem;
-}
-.header nav {
-  font-size: 35%;
-  font-weight: bold;
-  display: flex;
-  height: 3rem;
-}
-@media (max-width: 500px) {
-  .header nav {
-    padding: 0;
-    padding-left: 0;
-    height: 4rem;
-  }
-}
-.header nav a {
-  text-decoration: none;
-  color: #FFFFFF;
-  padding-left: 10%;
-}
-@media (max-width: 500px) {
-  .header nav a {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-  }
-}
 .bottom-container {
   width: 100%;
+  background: none;
 }
 .bottom-container button {
   margin: 1rem;
@@ -546,6 +563,9 @@ img {
   align-items: center;
   justify-content: space-around;
   padding: 3rem;
+}
+.client-section h3 {
+  margin-top: 2rem;
 }
 @media (max-width: 800px) {
   .client-section {
@@ -578,6 +598,9 @@ img {
   justify-content: space-around;
   padding: 3rem;
 }
+.trainer-section h3 {
+  margin-top: 2rem;
+}
 @media (max-width: 800px) {
   .trainer-section {
     flex-direction: column-reverse;
@@ -603,7 +626,7 @@ img {
   max-width: 40rem;
   width: 50%;
 }
-body {
+.about-body {
   background: linear-gradient(#3D9DE2, #9013FE);
 }
 .tabs {
@@ -759,6 +782,11 @@ body {
   position: relative;
   bottom: 4rem;
 }
+@media (max-width: 508px) {
+  .testimonial {
+    width: 9rem;
+  }
+}
 .testimonial img {
   width: 8rem;
   height: 8rem;
@@ -767,6 +795,11 @@ body {
 .testimonial p {
   font-size: 3rem;
   text-align: center;
+}
+@media (max-width: 508px) {
+  .testimonial p {
+    font-size: 1.7rem;
+  }
 }
 .fas {
   position: absolute;
