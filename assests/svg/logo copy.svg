@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="111px" viewBox="0 0 112 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>856FCD0D-996D-438C-A44D-0DE04F3DD8FD</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#79EDDC" offset="0%"></stop>
+            <stop stop-color="#32C5FF" offset="100%"></stop>
+        </linearGradient>
+        <text id="text-2" font-family="SignPainter-HouseScriptSemibold, SignPainter" font-size="24" font-style="condensed" font-weight="500" letter-spacing="0.216" fill="#00518E">
+            <tspan x="31" y="57">Fitness</tspan>
+        </text>
+        <filter x="-6.8%" y="-11.4%" width="116.6%" height="131.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.570482337   0 0 0 0 0.570482337   0 0 0 0 0.570482337  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="GraniteRegular, Granite" font-size="21" font-weight="normal" fill="#FA6400">
+            <tspan x="0" y="40">Anywhere</tspan>
+        </text>
+        <filter x="-6.5%" y="-6.9%" width="111.8%" height="119.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.488847373   0 0 0 0 0.481469951   0 0 0 0 0.481469951  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Anywhere-Fitness" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-Up-#1-hover" transform="translate(-132.000000, -93.000000)">
+            <g id="Background" transform="translate(-1.000000, 0.000000)">
+                <g id="logo" transform="translate(120.640000, 90.110837)">
+                    <g id="logo-copy" transform="translate(13.069333, 3.003695)">
+                        <ellipse id="Oval" fill="#8CEAFF" cx="55.2933338" cy="55.0677334" rx="55.2933338" ry="55.0677334"></ellipse>
+                        <g id="Logo-Copy" transform="translate(15.080000, 14.017241)">
+                            <g id="Group">
+                                <ellipse id="Oval" fill="url(#linearGradient-1)" cx="40.2133337" cy="41.0504922" rx="40.2133337" ry="40.0492607"></ellipse>
+                                <path d="M27.9669951,11.0925271 C28.1467422,10.7821942 28.3264892,10.4718613 28.5062362,10.1615285 C30.1819033,7.49005727 31.0921303,6.54356901 31.7769564,5.86170352 C39.3906887,-1.71911295 54.0837463,-0.192374448 64.518297,7.09633306 C88.4103464,23.7853277 88.4103465,57.1633171 64.518297,73.8523117 C49.8936804,84.0678501 48.6969246,75.840272 60.9280296,49.1695775 C62.8972668,44.8755343 61.2113447,39.7897529 57.067005,37.5223424 L31.4352135,23.4989274 C27.074617,21.1132005 25.4736689,15.6442249 27.8593957,11.2836285 C27.8944847,11.2194933 27.9303538,11.1557882 27.9669951,11.0925271 Z" id="Rectangle" fill="#32C5FF"></path>
+                            </g>
+                            <g id="Fitness" fill="#00518E" fill-opacity="1">
+                                <use filter="url(#filter-3)" xlink:href="#text-2"></use>
+                                <use xlink:href="#text-2"></use>
+                            </g>
+                            <g id="Anywhere" fill="#FA6400" fill-opacity="1">
+                                <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                                <use xlink:href="#text-4"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
