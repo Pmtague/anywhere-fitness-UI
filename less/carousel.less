@@ -70,7 +70,6 @@
 
   .testimonial {
     max-width: 400px;
-    // border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +80,10 @@
     position: relative;
     bottom: 4rem;
 
+    @media (max-width: 508px) {
+        width: 9rem;
+    }
+
     img {
         width: 8rem;
         height: 8rem;
@@ -90,6 +93,10 @@
     p {
         font-size: 3rem;
         text-align: center;
+
+        @media (max-width: 508px) {
+            font-size: 1.7rem;
+        }
     }
 }
   

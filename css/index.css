@@ -772,6 +772,11 @@ img {
   position: relative;
   bottom: 4rem;
 }
+@media (max-width: 508px) {
+  .testimonial {
+    width: 9rem;
+  }
+}
 .testimonial img {
   width: 8rem;
   height: 8rem;
@@ -780,6 +785,11 @@ img {
 .testimonial p {
   font-size: 3rem;
   text-align: center;
+}
+@media (max-width: 508px) {
+  .testimonial p {
+    font-size: 1.7rem;
+  }
 }
 .fas {
   position: absolute;
