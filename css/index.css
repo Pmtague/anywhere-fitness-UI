@@ -175,7 +175,7 @@ img {
 .container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(144, 19, 254, 0.35), rgba(61, 157, 226, 0.2)), url(../assests/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
+  background: linear-gradient(rgba(144, 19, 254, 0.35), rgba(61, 157, 226, 0.2)), url(../assets/img/meghan-holmes-buWcS7G1_28-unsplash.jpg);
   background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -628,6 +628,7 @@ img {
 }
 .about-body {
   background: linear-gradient(#3D9DE2, #9013FE);
+  height: 100vh;
 }
 .tabs {
   border-bottom: 2px solid #E9E9E9;
