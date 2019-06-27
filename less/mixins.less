@@ -1,25 +1,39 @@
+// flex stuff
+
 .flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .flexCenterColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
 }
 
 .textNormalize {
-    text-decoration: none;
-    color: #ffffff;
-  }
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .featureSectionAlign {
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-  
+
+// gradients
+
+.mainGradient {
+  background: linear-gradient(@vivid-violet, @bright-blue);
+}
