@@ -470,7 +470,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  width: 40%;
+  width: 20%;
   margin-left: 3.5rem;
 }
 .nav-links {
@@ -496,10 +496,9 @@ body {
 .staff {
   margin-top: 5rem;
 }
-.staff-member .pic {
+.pic {
   height: 5rem;
   width: 5rem;
-}
-.close {
-  list-style: none;
+  margin-left: 20rem;
+  margin-top: 5rem;
 }
