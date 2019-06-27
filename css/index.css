@@ -182,42 +182,30 @@ img {
   background-attachment: fixed;
   padding-bottom: 5rem;
 }
-.banner {
-  padding: 3rem;
-}
-.header {
-  width: 80%;
-  margin-top: 0;
-  margin-left: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  background: none;
-  padding-left: 1rem;
-}
-.header img {
-  width: 10rem;
-}
 .statement {
-  width: 35%;
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 200%;
   line-height: 33px;
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  margin-left: 2rem;
+  padding: 2rem 18rem 5rem 18rem;
+}
+.statement p {
+  text-align: center;
 }
 @media (max-width: 800px) {
   .statement {
-    width: 50%;
+    width: 100%;
+    padding: 2rem 10rem 2rem 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .statement {
+    padding: 2rem 5rem 2rem 5rem;
   }
 }
 .signup-parent {
@@ -246,6 +234,21 @@ img {
 }
 @media (max-width: 800px) {
   .signup-section {
+    width: 70%;
+    margin: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .signup-section {
+    width: 70%;
+  }
+}
+.spacer-bar {
+  width: 0.5%;
+  background-color: #E9E9E9;
+}
+@media (max-width: 800px) {
+  .spacer-bar {
     width: 80%;
     margin-bottom: 2rem;
   }
@@ -331,7 +334,7 @@ img {
 }
 .middle-container .top h2,
 .middle-container .bottom h2 {
-  font-size: 35px;
+  font-size: 210%;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -343,7 +346,7 @@ img {
 }
 .middle-container .top p,
 .middle-container .bottom p {
-  font-size: 22px;
+  font-size: 130%;
   color: #FFFFFF;
 }
 @media (max-width: 800px) {
@@ -361,13 +364,13 @@ img {
 @media (max-width: 800px) {
   .middle-container .top .left,
   .middle-container .bottom .left {
-    width: 130%;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .middle-container .top .left,
   .middle-container .bottom .left {
-    width: 150%;
+    width: 100%;
   }
 }
 .middle-container .top .left .img,
@@ -406,7 +409,7 @@ img {
   }
 }
 .middle-container .middle h2 {
-  font-size: 35px;
+  font-size: 210%;
   color: #323337;
   font-weight: bold;
 }
@@ -416,7 +419,7 @@ img {
   }
 }
 .middle-container .middle p {
-  font-size: 22px;
+  font-size: 130%;
   color: #323337;
 }
 @media (max-width: 800px) {
@@ -444,12 +447,12 @@ img {
 }
 @media (max-width: 800px) {
   .middle-container .middle .right {
-    width: 130%;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .middle-container .middle .right {
-    width: 150%;
+    width: 100%;
   }
 }
 .middle-container .middle .right .img {
@@ -457,110 +460,54 @@ img {
   border: 1px solid;
   box-shadow: 15px -15px #E9E9E9;
 }
-.nav {
-  -webkit-transition: right 0.5s ease;
-  -moz-transition: right 0.5s ease;
-  -ms-transition: right 0.5s ease;
-  -o-transition: right 0.5s ease;
-  transition: right 0.5s ease;
-  background: linear-gradient(#3D9DE2, #9013FE);
-  color: white;
-  font-size: 2rem;
-  height: 100vh;
-  right: -20rem;
-  padding: 6rem 2rem 2rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 20rem;
-  z-index: 1;
-}
-.nav ul {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.nav li {
+.header {
+  justify-content: space-around;
+  margin-top: 0;
+  margin-left: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  padding: 0.5rem;
-  border-radius: 10rem;
+  background: none;
+  padding: 2% 10% 2% 0%;
 }
-.nav li:hover {
-  background-color: #FF8C42;
+@media (max-width: 800px) {
 }
-.nav a {
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+}
+.header img {
+  width: 10rem;
+}
+.header nav {
+  font-size: 35%;
+  font-weight: bold;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .header nav {
+    padding: 0;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+.header nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
+  padding-left: 15%;
 }
-.nav.expanded {
-  right: 0;
-}
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  right: 2rem;
-  position: fixed;
-  top: 2rem;
-  width: 3.6rem;
-  z-index: 2;
-}
-.nav-toggle:hover {
-  opacity: 0.8;
-}
-.nav-toggle .nav-toggle-bar,
-.nav-toggle .nav-toggle-bar::after,
-.nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: white;
-  content: "";
-  height: 0.4rem;
-  width: 100%;
-}
-.nav-toggle .nav-toggle-bar {
-  margin-top: 0;
-}
-.nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.8rem;
-}
-.nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.8rem;
-}
-.nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
-}
-.nav-toggle.expanded .nav-toggle-bar::after,
-.nav-toggle.expanded .nav-toggle-bar::before {
-  background: white;
-  margin-top: 0;
-}
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+@media (max-width: 500px) {
+  .header nav a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .bottom-container {
   width: 100%;
@@ -595,6 +542,11 @@ img {
   font-size: 1.4rem;
   color: black;
 }
+@media (max-width: 500px) {
+  .client-section p {
+    text-align: center;
+  }
+}
 .trainer-section {
   width: 100%;
   font-family: Roboto;
@@ -616,6 +568,11 @@ img {
   margin: 1rem;
   font-size: 1.4rem;
   color: black;
+}
+@media (max-width: 500px) {
+  .trainer-section p {
+    text-align: center;
+  }
 }
 .message {
   display: flex;
