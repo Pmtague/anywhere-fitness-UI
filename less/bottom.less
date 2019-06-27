@@ -4,6 +4,7 @@
   button {
     margin: 1rem;
     border: 2px solid @light-orange;
+    max-width: 25rem;
   }
 }
 
@@ -57,6 +58,11 @@
 
   h3 {
     margin-top: 2rem;
+
+    @media (max-width: 800px) {
+        margin-left: 2rem;
+      }
+
   }
 
   @media (max-width: 800px) {
@@ -83,5 +89,5 @@
 
 img {
   max-width: 40rem;
-  width: 50%;
+  width: 40%;
 }
