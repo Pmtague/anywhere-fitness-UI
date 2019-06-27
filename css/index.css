@@ -511,6 +511,7 @@ img {
 }
 .bottom-container {
   width: 100%;
+  background: none;
 }
 .bottom-container button {
   margin: 1rem;
@@ -584,7 +585,7 @@ img {
   max-width: 40rem;
   width: 50%;
 }
-body {
+.about-body {
   background: linear-gradient(#3D9DE2, #9013FE);
 }
 .tabs {
