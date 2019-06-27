@@ -1,4 +1,7 @@
-
+.about-body{
+  background:linear-gradient(35deg,@bright-blue,transparent);
+ 
+}
 .nav-header{
     width: 100%;
     height: 100%;
@@ -13,9 +16,7 @@
     margin: 5%;
   }
 
-  @media (max-width: 500px) {
-    width: 70%;
-  }
+  
 }
   
 .about-logo{
@@ -26,9 +27,7 @@
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
 
 nav {
@@ -43,9 +42,7 @@ nav {
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+      
     }
     
 
@@ -58,9 +55,7 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
 
 
@@ -72,16 +67,14 @@ a{
     flex-direction: row;
     margin-top:10%;
     width: 100%;
-    height: 47px;
     background:linear-gradient(@vivid-violet, @bright-blue);
     @media (max-width: 800px) {
         width: 70%;
         margin: 5%;
+        flex-direction: column;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+    
     }
   
   .tabs .topics {
@@ -89,14 +82,13 @@ a{
     justify-content: none;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     @media (max-width: 800px) {
         width: 70%;
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
     
   
@@ -116,11 +108,10 @@ a{
     @media (max-width: 800px) {
         width: 70%;
         margin: 5%;
+        
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
   
   .tabs .topics .tab:hover {
@@ -130,9 +121,7 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+      
     }
   
 
@@ -146,14 +135,15 @@ a{
     margin-left: 3.5rem;
     flex-wrap: wrap;
     background-color: @dark-grayish-blue;
+    p{
+      margin-right: 1.8rem;
+    }
     @media (max-width: 800px) {
-        width: 70%;
+        width: 100%;
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+      
     }
   
 
@@ -163,7 +153,7 @@ a{
     justify-content: space-between;
     align-items: none;
     flex-direction: column;
-    width: 380px;
+    width: 15rem;
     margin-bottom: 16px;
     padding: 24px;
     @media (max-width: 800px) {
@@ -171,9 +161,7 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
   
   .cards-container .card .headline {
@@ -184,9 +172,7 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
   
   .cards-container .card .author {
@@ -200,35 +186,30 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
   
   .cards-container .card .author .img-container {
     padding-right: 10px;
     border-right: 1px solid lightgrey;
-    height: 40px;
-    @media (max-width: 800px) {
-        width: 70%;
-        margin: 5%;
-      }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+    // @media (max-width: 800px) {
+    //     width: 70%;
+    //     margin: 5%;
+    //   }
+    
+      
     }
   
   .cards-container .card .author .img-container img {
-    width: 40px;
-    @media (max-width: 800px) {
-        width: 70%;
-        margin: 5%;
-      }
+    width: 8rem;
+
+    // @media (max-width: 800px) {
+    //     width: 70%;
+    //     margin: 5%;
+    //   }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+      
     }
   
   .cards-container .card .author span {
@@ -241,9 +222,7 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
   
   .title{
@@ -256,9 +235,12 @@ a{
         margin: 5%;
       }
     
-      @media (max-width: 500px) {
-        width: 70%;
-      }
+     
     }
+    h2{
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+    }
+    
   
  
