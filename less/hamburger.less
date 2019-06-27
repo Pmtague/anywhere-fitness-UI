@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 0;
   margin-left: 0;
   font-family: Roboto;
@@ -9,26 +9,28 @@
   font-size: 64px;
   line-height: 75px;
   display: flex;
-  align-items: center;
-  color: @white;
   background: none;
+  padding: 2% 10% 2% 0%;
+
+  @media (max-width: 800px) {
+    // padding: 2% 15% 2% 0%;
+  }
 
   @media (max-width: 500px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
 
   img {
     width: 10rem;
-    padding-left: 1rem;
   }
 
   nav {
-      font-size: 1.6rem;
+      font-size: 35%;
       font-weight: bold;
-      padding: 3.6rem;
-      padding-left: 27.2rem;
+      display: flex;
 
       @media (max-width: 500px) {
           padding: 0;
@@ -39,11 +41,11 @@
       a {
           text-decoration: none;
           color: @white;
-          padding-left: 2.6rem;
+          padding-left: 15%;
 
           @media (max-width: 500px) {
-              padding-left: 2.8rem;
-              padding-right: 2.8rem;
+              padding-left: 1rem;
+              padding-right: 1rem;
           }
       }
   }
