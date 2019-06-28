@@ -1,6 +1,6 @@
 .about-body{
   background:linear-gradient(35deg,@bright-blue,transparent);
-//   min-height: 100vh;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
 }
@@ -10,11 +10,6 @@
     height: 100%;
     background: linear-gradient(@vivid-violet,@bright-blue);
     background-position: right top;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  padding-bottom: 5rem;
-
   
 }
   
@@ -60,10 +55,9 @@
   .tabs {
     border-bottom:2px solid @very-light-gray;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    margin-top:10%;
     width: 100%;
     background:linear-gradient(@vivid-violet, @bright-blue);
     @media (max-width: 800px) {
@@ -98,7 +92,7 @@
     align-items: center;
     flex-direction: row;
     color:@very-light-gray;
-    margin-right:5rem;
+    margin: 3rem .3rem;
     padding: 2px 10px;
     font-size: 12px;
     letter-spacing: 2px;
@@ -228,7 +222,6 @@
   
   .title{
     color: @very-light-gray;
-    margin-right: 9rem;
     width: 10%;
     @media (max-width: 800px) {
         width: 70%;

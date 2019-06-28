@@ -1,4 +1,5 @@
 .middle-container {
+  background: linear-gradient(@white, fade(@bright-blue, 40%), @white);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +8,6 @@
   .top,
   .bottom {
     .featureSectionAlign;
-    background: linear-gradient(@white, @gradient-blue, @white);
 
     @media (max-width: 500px) {
       flex-direction: column;
@@ -16,22 +16,22 @@
 
     h2 {
       font-size: 210%;
-      color: @white;
+      color: black;
       font-weight: bold;
       line-height: 2.5rem;
 
       @media (max-width: 500px) {
-        color: @font-color;
+        color: black;
       }
     }
 
     p {
       font-size: 130%;
-      color: @white;
+      color: black;
       line-height: 2rem;
 
       @media (max-width: 500px) {
-        color: @font-color;
+        color: black;
       }
     }
 
@@ -55,7 +55,7 @@
         margin-right: 2rem;
 
         @media (max-width: 500px) {
-            margin-right: 0; 
+          margin-right: 0;
         }
       }
     }
@@ -63,7 +63,7 @@
     .right {
       width: 65%;
       display: flex;
-    //   padding-right: 5rem;
+      //   padding-right: 5rem;
 
       @media (max-width: 500px) {
         padding-right: 0;
@@ -76,7 +76,6 @@
 
   .middle {
     .featureSectionAlign;
-    background: linear-gradient(@gradient-purple, @white, @gradient-purple);
 
     @media (max-width: 500px) {
       flex-direction: column-reverse;
@@ -85,29 +84,29 @@
 
     h2 {
       font-size: 210%;
-      color: @font-color;
+      color: black;
       font-weight: bold;
       line-height: 2.5rem;
 
       @media (max-width: 400px) {
-        color: @font-color;
+        color: black;
       }
     }
 
     p {
       font-size: 130%;
-      color: @font-color;
+      color: black;
       line-height: 2rem;
 
       @media (max-width: 400px) {
-        color: @font-color;
+        color: black;
       }
     }
 
     .left {
       width: 65%;
       display: flex;
-    //   padding-left: 5rem;
+      //   padding-left: 5rem;
 
       @media (max-width: 500px) {
         padding-left: 0;
@@ -131,12 +130,12 @@
         width: 40%;
         border: 1px solid;
         border-radius: 1rem;
-        box-shadow: 15px -15px @box-shadow-two;
+        box-shadow: 15px -15px @box-shadow-one;
         margin-bottom: 2rem;
         min-width: 8rem;
         margin-left: 2rem;
         @media (max-width: 500px) {
-            margin-left: 0;
+          margin-left: 0;
         }
       }
     }
