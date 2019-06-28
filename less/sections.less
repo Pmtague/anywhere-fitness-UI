@@ -51,13 +51,19 @@
         border-radius: 1rem;
         box-shadow: -15px -15px @box-shadow-one;
         margin-bottom: 2rem;
+        min-width: 8rem;
+        margin-right: 2rem;
+
+        @media (max-width: 500px) {
+            margin-right: 0; 
+        }
       }
     }
 
     .right {
       width: 65%;
       display: flex;
-      padding-right: 5rem;
+    //   padding-right: 5rem;
 
       @media (max-width: 500px) {
         padding-right: 0;
@@ -101,7 +107,7 @@
     .left {
       width: 65%;
       display: flex;
-      padding-left: 5rem;
+    //   padding-left: 5rem;
 
       @media (max-width: 500px) {
         padding-left: 0;
@@ -127,6 +133,11 @@
         border-radius: 1rem;
         box-shadow: 15px -15px @box-shadow-two;
         margin-bottom: 2rem;
+        min-width: 8rem;
+        margin-left: 2rem;
+        @media (max-width: 500px) {
+            margin-left: 0;
+        }
       }
     }
   }
