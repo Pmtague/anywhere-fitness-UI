@@ -23,14 +23,6 @@
 .mainGradient {
   background: linear-gradient(#9013FE, #3D9DE2);
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -592,7 +584,7 @@ img {
 }
 @media (max-width: 800px) {
   .trainer-section h3 {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 }
 @media (max-width: 800px) {
@@ -759,11 +751,6 @@ img {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
-}
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
 }
 .testimonial {
   max-width: 400px;
