@@ -67,6 +67,7 @@
     width: 100%;
     background:linear-gradient(@vivid-violet, @bright-blue);
     @media (max-width: 800px) {
+        border: 1px solid black;
         width: 70%;
         margin: 5%;
         flex-direction: column;
@@ -103,6 +104,10 @@
     letter-spacing: 2px;
     cursor: pointer;
     font-weight: bold;
+
+    &:hover {
+        background-color: @light-orange;
+    }
     @media (max-width: 800px) {
         width: 70%;
         margin: 5%;
@@ -129,7 +134,7 @@
     width: 40%;
     margin: 0 auto;
     flex-wrap: wrap;
-    background-color: @dark-grayish-blue;
+    background-color: @white;
     p{
       margin-right: 1.8rem;
     }
@@ -143,7 +148,7 @@
   
 
   .cards-container .card {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid @light-orange;
     display: none;
     justify-content: space-between;
     align-items: none;
@@ -162,7 +167,7 @@
   
   .cards-container .card .headline {
     font-size: 25px;
-    font-family: Didot, serif;
+    font-family: roboto, serif;
     @media (max-width: 800px) {
         width: 70%;
         margin: 5%;
@@ -187,7 +192,7 @@
   
   .cards-container .card .author .img-container {
     padding-right: 10px;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid @light-orange;
     
     // @media (max-width: 800px) {
     //     width: 70%;
