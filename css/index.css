@@ -226,7 +226,7 @@ img {
   color: #FFFFFF;
   transition: ease 0.2s;
   padding: 0.5rem;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
 }
 .header .nav a:hover {
   background-color: #FF8C42;
@@ -323,13 +323,22 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.signup-content .signup-link {
+  margin: none;
+  padding: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10rem;
+}
+.signup-content .signup-link:hover {
+  text-decoration: none;
+}
 .signup-content h3 {
   margin-bottom: 1rem;
   text-align: center;
-}
-.signup-content button {
-  margin: 1rem;
-  margin-bottom: 2rem;
 }
 .signup-content p {
   margin: 1rem;
@@ -353,7 +362,7 @@ img {
   border: none;
   color: #FFFFFF;
   transition: ease 0.2s;
-  width: 80%;
+  width: 100%;
   color: white;
   display: flex;
   justify-content: center;
@@ -528,10 +537,15 @@ img {
   width: 100%;
   background: none;
 }
-.bottom-container button {
-  margin: 1rem;
-  border: 2px solid #FF8C42;
+.bottom-container .bottom-link {
+  text-decoration: none;
+  border-radius: 10rem;
   max-width: 25rem;
+  width: 50%;
+}
+.bottom-container button {
+  border: 2px solid #FF8C42;
+  width: 100%;
 }
 .client-section {
   width: 100%;
@@ -553,9 +567,6 @@ img {
     flex-direction: column;
     justify-content: center;
   }
-}
-.client-section button {
-  margin: 1rem;
 }
 .client-section p {
   margin: 1rem;
@@ -645,6 +656,7 @@ img {
 }
 @media (max-width: 800px) {
   .tabs {
+    border: 1px solid black;
     width: 70%;
     margin: 5%;
     flex-direction: column;
@@ -676,6 +688,9 @@ img {
   cursor: pointer;
   font-weight: bold;
 }
+.tabs .topics .tab:hover {
+  background-color: #FF8C42;
+}
 @media (max-width: 800px) {
   .tabs .topics .tab {
     width: 70%;
@@ -697,7 +712,7 @@ img {
   width: 40%;
   margin: 0 auto;
   flex-wrap: wrap;
-  background-color: #858891;
+  background-color: #FFFFFF;
 }
 .cards-container p {
   margin-right: 1.8rem;
@@ -709,7 +724,7 @@ img {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #FF8C42;
   display: none;
   justify-content: space-between;
   align-items: none;
@@ -727,7 +742,7 @@ img {
 }
 .cards-container .card .headline {
   font-size: 25px;
-  font-family: Didot, serif;
+  font-family: roboto, serif;
 }
 @media (max-width: 800px) {
   .cards-container .card .headline {
@@ -750,7 +765,7 @@ img {
 }
 .cards-container .card .author .img-container {
   padding-right: 10px;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #FF8C42;
 }
 .cards-container .card .author .img-container img {
   width: 5rem;
